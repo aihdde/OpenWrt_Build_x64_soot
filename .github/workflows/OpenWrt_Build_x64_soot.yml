@@ -41,7 +41,7 @@ on:
       INFORMATION_NOTICE:
         description: 'Telegram或pushplus信息通知'
         required: true
-        default: 'pushplus'
+        default: 'Telegram'
         type: choice
         options:
           - '关闭'
@@ -60,7 +60,7 @@ on:
       UPLOAD_RELEASE:
         description: '发布固件到 Github Releases'
         required: false
-        default: 'false'
+        default: 'true'
         type: boolean
       CACHEWRTBUILD_SWITCH:
         description: '缓存加速编译'
@@ -81,7 +81,7 @@ on:
 
 # 定时触发开启开始编译(把下面两个#去掉开启,时间设置请看定时开启编译说明)
   schedule:
-   - cron: 0 2 * * 5
+   - cron: 0 16 * * *
 
 env:
   GITHUB_LINK: https://github.com/${{github.repository}}
