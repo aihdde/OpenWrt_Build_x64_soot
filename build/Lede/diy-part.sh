@@ -17,7 +17,7 @@ sed -i '9a\msgstr "固件出处"' feeds/luci/modules/luci-base/po/zh-cn/base.po
 sed -i '10a \\' feeds/luci/modules/luci-base/po/zh-cn/base.po
 
 # 后台IP设置
-export Ipv4_ipaddr="10.10.10.6"             # 修改openwrt后台地址(填0为关闭)
+export Ipv4_ipaddr="10.10.10.1"             # 修改openwrt后台地址(填0为关闭)
 export Netmask_netm="255.255.255.0"          # IPv4 子网掩码（默认：255.255.255.0）(填0为不作修改)
 export Op_name="OpenWrt-GXNAS"               # 修改主机名称为OpenWrt-123(填0为不作修改)
 
@@ -107,7 +107,6 @@ config.buildinfo
 feeds.buildinfo
 openwrt-x86-64-generic-kernel.bin
 openwrt-x86-64-generic.manifest
-openwrt-x86-64-generic-squashfs-rootfs.img.gz
 sha256sums
 version.buildinfo
 ipk.tar.gz
@@ -115,9 +114,6 @@ profiles.json
 openwrt-x86-64-generic-ext4-combined.img.gz
 openwrt-x86-64-generic-ext4-combined-efi.img.gz
 openwrt-x86-64-generic-ext4-rootfs.img.gz
-openwrt-x86-64-generic-rootfs.tar.gz
-openwrt-x86-64-generic-squashfs-combined.vmdk
-openwrt-x86-64-generic-squashfs-combined-efi.vmdk
 EOF
 
 # 在线更新时，删除不想保留固件的某个文件，在EOF跟EOF之间加入删除代码，记住这里对应的是固件的文件路径，比如： rm -rf /etc/config/luci
