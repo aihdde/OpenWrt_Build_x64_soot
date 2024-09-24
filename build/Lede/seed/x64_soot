@@ -258,4 +258,4 @@ CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
 CONFIG_PACKAGE_kmod-nf-conntrack-netlink=y
 CONFIG_PACKAGE_vlmcsd=y
-CONFIG_PACKAGE_luci_app_vlmcsd=y
+CONFIG_PACKAGE_luci-app-vlmcsd=y
