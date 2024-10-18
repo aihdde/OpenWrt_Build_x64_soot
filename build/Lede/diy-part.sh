@@ -14,7 +14,7 @@ sed -i '/<tr><td width="33%"><%:Compiler author/a <tr><td width="33%"><%:Firmwar
 #添加汉化
 sed -i '8a\msgid "Firmware Update"' feeds/luci/modules/luci-base/po/zh-cn/base.po
 sed -i '9a\msgstr "固件出处"' feeds/luci/modules/luci-base/po/zh-cn/base.po
-sed -i '10a \\' feeds/luci/modules/luci-base/po/zh-cn/base.po
+#sed -i '10a \\' feeds/luci/modules/luci-base/po/zh-cn/base.po
 
 # 后台IP设置
 export Ipv4_ipaddr="10.10.10.1"             # 修改openwrt后台地址(填0为关闭)
